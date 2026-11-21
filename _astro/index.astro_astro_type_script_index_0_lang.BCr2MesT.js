@@ -1,1 +1,1 @@
-import{r as e,t}from"./locale.CReyk8Rd.js";var n=null;try{n=localStorage.getItem(e)}catch{}var r=t(n,navigator.languages?.length?navigator.languages:[navigator.language]);window.location.replace(`/olesya-usova-portfolio/${r}/${window.location.search}${window.location.hash}`);
+import{r as e,t}from"./locale.CReyk8Rd.js";var n=null;try{n=localStorage.getItem(e)}catch{}var r=t(n,navigator.languages?.length?navigator.languages:[navigator.language]);window.location.replace(`/${r}/${window.location.search}${window.location.hash}`);

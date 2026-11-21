@@ -4,7 +4,7 @@
 
 ## Ссылка
 
-https://vaoaoadim.github.io/olesya-usova-portfolio/
+https://bydenisovna.ru/
 
 ## О проекте
 

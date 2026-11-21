@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://vaoaoadim.github.io/olesya-usova-portfolio/sitemap.xml
+Sitemap: https://bydenisovna.ru/sitemap.xml
