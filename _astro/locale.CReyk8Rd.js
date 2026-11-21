@@ -1,0 +1,1 @@
+var e=`portfolio.locale`;function t(e){return e===`ru`||e===`en`}function n(e,n){if(t(e))return e;for(let e of n){let n=e.toLowerCase().split(`-`)[0];if(t(n))return n}return`en`}export{t as n,e as r,n as t};

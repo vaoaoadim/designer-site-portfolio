@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en" style="background:#7ca2ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#7CA2CA"><script>(function(){const policy = {"storageKey":"olesya-portfolio:theme","desktopMedia":"(min-width: 1024px)","lightHero":"#7ca2ca","darkHero":"#041c35","lightCase":"#ffffff","darkCase":"#fef7e5"};
+const surface = "hero";
+const lightSurface = "#7ca2ca";
+const darkSurface = "#041c35";
+
+  (() => {
+    const apply = () => {
+      let theme = 'light';
+      try { theme = localStorage.getItem(policy.storageKey) === 'dark' ? 'dark' : 'light'; } catch { /* Keep the light fallback. */ }
+      const root = document.documentElement;
+      if (surface === 'hero') root.toggleAttribute('data-lamp-desktop', matchMedia(policy.desktopMedia).matches);
+      root.dataset.theme = theme;
+      root.style.colorScheme = theme;
+      root.style.backgroundColor = theme === 'dark' ? darkSurface : lightSurface;
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? darkSurface : lightSurface);
+      document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', theme);
+    };
+    apply();
+    if (surface === 'case') {
+      // Apply saved case colors before render and keep them current across tabs/BFCache.
+      window.addEventListener('storage', (event) => { if (event.key === policy.storageKey || event.key === null) apply(); });
+      window.addEventListener('pageshow', (event) => { if (event.persisted) apply(); });
+    }
+  })();
+})();</script><meta name="robots" content="noindex, follow"><title>Olesya Usova — Portfolio</title><link rel="icon" href="/olesya-usova-portfolio/favicon.ico?v=2" sizes="16x16 32x32 48x48"><link rel="icon" href="/olesya-usova-portfolio/favicon.svg?v=2" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="/olesya-usova-portfolio/apple-touch-icon.png?v=2" sizes="180x180"><script type="module" src="/olesya-usova-portfolio/_astro/index.astro_astro_type_script_index_0_lang.BCr2MesT.js"></script><noscript><meta http-equiv="refresh" content="0;url=/olesya-usova-portfolio/en/"></noscript><script type="module" src="/olesya-usova-portfolio/_astro/page.BsuiZEAU.js"></script></head><body style="margin:0;background:inherit"></body></html>
